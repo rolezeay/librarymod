@@ -288,7 +288,7 @@ end)
 
 CreateElement("TFrame", function()
 	local TFrame = Create("Frame", {
-		BackgroundTransparency = 1
+		BackgroundTransparency = 0.7
 	})
 	return TFrame
 end)
@@ -317,7 +317,7 @@ CreateElement("Button", function()
 	local Button = Create("TextButton", {
 		Text = "",
 		AutoButtonColor = false,
-		BackgroundTransparency = 1,
+		BackgroundTransparency = 0.8,
 		BorderSizePixel = 0
 	})
 	return Button
@@ -325,7 +325,7 @@ end)
 
 CreateElement("ScrollFrame", function(Color, Width)
 	local ScrollFrame = Create("ScrollingFrame", {
-		BackgroundTransparency = 1,
+		BackgroundTransparency = 0.7,
 		MidImage = "rbxassetid://7445543667",
 		BottomImage = "rbxassetid://7445543667",
 		TopImage = "rbxassetid://7445543667",
@@ -340,7 +340,7 @@ end)
 CreateElement("Image", function(ImageID)
 	local ImageNew = Create("ImageLabel", {
 		Image = ImageID,
-		BackgroundTransparency = 1
+		BackgroundTransparency = 0.8
 	})
 
 	if GetIcon(ImageID) ~= nil then
@@ -353,7 +353,7 @@ end)
 CreateElement("ImageButton", function(ImageID)
 	local Image = Create("ImageButton", {
 		Image = ImageID,
-		BackgroundTransparency = 1
+		BackgroundTransparency = 0.7
 	})
 	return Image
 end)
